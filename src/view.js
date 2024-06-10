@@ -9,7 +9,7 @@ function View(){
   const[form, setForm] = useState( {title: '',content:''})
 
   let detail = () =>{
-    Axios.get(`http://35.239.213.213:8000/detail?id=${id}`)
+    Axios.get(`http://34.94.134.233:8000/detail?id=${id}`)
     .then( res => {
       if(res.data.length > 0){
         setForm({
